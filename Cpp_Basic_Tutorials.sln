@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp_Basic_Information", "Cpp_Basic_Information\Cpp_Basic_Information.vcxproj", "{07A04D9C-69FE-4FE8-859A-261A94766612}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Storage_Class_Specifiers", "Storage_Class_Specifiers\Storage_Class_Specifiers.vcxproj", "{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{07A04D9C-69FE-4FE8-859A-261A94766612}.Release|x64.Build.0 = Release|x64
 		{07A04D9C-69FE-4FE8-859A-261A94766612}.Release|x86.ActiveCfg = Release|Win32
 		{07A04D9C-69FE-4FE8-859A-261A94766612}.Release|x86.Build.0 = Release|Win32
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Debug|x64.ActiveCfg = Debug|x64
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Debug|x64.Build.0 = Debug|x64
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Debug|x86.ActiveCfg = Debug|Win32
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Debug|x86.Build.0 = Debug|Win32
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Release|x64.ActiveCfg = Release|x64
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Release|x64.Build.0 = Release|x64
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Release|x86.ActiveCfg = Release|Win32
+		{D212ED1E-154D-4D1A-B7BC-CAF537DCC5CD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
