@@ -1,5 +1,5 @@
 #include "RegisterClassSpecifier.h"
 
-CRegisterClassSpecifier::CRegisterClassSpecifier()
+SPECIFIER::REGISTER::CRegisterClassSpecifier::CRegisterClassSpecifier()
 {
 }

@@ -1,22 +1,28 @@
 #pragma once
+
 #include <iostream>
 
-
-static int m_global_member;
-
-class CStatic_Specifiers final
+namespace SPECIFIER
 {
-public:
-	CStatic_Specifiers();
-	~CStatic_Specifiers() = default;
+	namespace STATIC
+	{
+		static int m_global_member; //if not initialized the by default initialized with 0
 
-public:
-	static void WriteMemberData();
-	void DisplayMemberData();
+		class CStatic_Specifiers final
+		{
+		public:
+			CStatic_Specifiers();
+			~CStatic_Specifiers() = default;
 
-private:
-	static int m_static_member;
-	int m_non_static_member;
+		public:
+			static void WriteMemberData();
+			void DisplayMemberData();
+			void StaticLocalScopeData(const int f_param);
 
-};
+		private:
+			static int m_static_member;
+			int m_non_static_member;
 
+		};
+	}
+}
