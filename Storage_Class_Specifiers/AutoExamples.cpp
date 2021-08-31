@@ -1,4 +1,6 @@
 #include "AutoExamples.h"
+#include <vector>
+#include <memory>
 
 namespace SPECIFIER
 {
@@ -18,6 +20,40 @@ namespace SPECIFIER
             auto l_data1 = nullptr;  // int pointer
             auto l_data2 = { 0.93f };// int float
             auto l_data3 = {10/2.0f};// int datatype
+
+            //equivalent
+            int  j = 0;
+            auto k = 0;
+
+            std::vector<int> l_vec{1,2,3,4};
+            
+            //point to iterator
+            std::vector<int>::iterator l_begin = l_vec.begin();
+            auto l_begin_itr = l_vec.begin();
+
+            std::vector<int>::iterator l_end = l_vec.end();
+            auto l_end_itr = l_vec.end();
+
+            std::vector<int>::const_iterator l_const_begin = l_vec.cbegin();
+            const auto l_const_begin_itr = l_vec.cbegin();
+
+            std::vector<int>::const_iterator l_const_end   = l_vec.cend();
+            const auto l_const_end_itr = l_vec.cend();
+
+            //make unique pointer
+
+            class CABC final
+            {
+            public:
+                CABC() = default;
+                ~CABC() = default;
+            };
+
+            CABC* l_ptr = new CABC();//Raw pointer
+            auto l_abc_ptr = std::make_unique<CABC>();
+            auto l_ptr_from_raw_pointer = l_ptr;
+
+            CABC* l_from_smart_pointer = l_abc_ptr.get();
 
         }
 
