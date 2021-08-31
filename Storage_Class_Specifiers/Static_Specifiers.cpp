@@ -16,6 +16,7 @@ void SPECIFIER::STATIC::CStatic_Specifiers::WriteMemberData()
 	m_static_member = 200;
 	//m_non_static_member = 20;  gives the error it is specific to object
 	SPECIFIER::STATIC::m_global_member = 40;
+	//in this method we can't access non static member of class
 }
 
 void SPECIFIER::STATIC::CStatic_Specifiers::DisplayMemberData()

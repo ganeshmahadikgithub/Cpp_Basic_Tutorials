@@ -24,12 +24,18 @@
     <ClCompile Include="RegisterClassSpecifier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AutoExamples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Static_Specifiers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RegisterClassSpecifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoExamples.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

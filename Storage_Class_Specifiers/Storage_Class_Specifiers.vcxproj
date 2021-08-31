@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AutoExamples.cpp" />
     <ClCompile Include="RegisterClassSpecifier.cpp" />
     <ClCompile Include="Static_Specifiers.cpp" />
     <ClCompile Include="Storage_Class_Specifiers.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AutoExamples.h" />
     <ClInclude Include="RegisterClassSpecifier.h" />
     <ClInclude Include="Static_Specifiers.h" />
   </ItemGroup>
