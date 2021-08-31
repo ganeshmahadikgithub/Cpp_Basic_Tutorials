@@ -2,9 +2,9 @@
 #include <iostream>
 
 
-static int m_global_member { 0 };
+static int m_global_member;
 
-class CStatic_Specifiers
+class CStatic_Specifiers final
 {
 public:
 	CStatic_Specifiers();

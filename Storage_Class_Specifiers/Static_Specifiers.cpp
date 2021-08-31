@@ -1,5 +1,8 @@
 #include "Static_Specifiers.h"
 
+int CStatic_Specifiers::m_static_member = 100;
+extern int m_global_member = 100;
+
 CStatic_Specifiers::CStatic_Specifiers()
 	: m_non_static_member(0)
 {
