@@ -5,10 +5,13 @@
 #include "Static_Specifiers.h"
 #include "RegisterClassSpecifier.h"
 #include "AutoExamples.h"
+#include "MutableSpecifier.h"
+
 
 using namespace SPECIFIER::STATIC;
 using namespace SPECIFIER::REGISTER;
 using namespace SPECIFIER::AUTO;
+using namespace SPECIFIER::MUTABLE;
 
 int main()
 {
@@ -32,5 +35,12 @@ int main()
     std::cout << "l_return:"<<l_return << std::endl;
 
    l_auto_example.InitializerListAutoVariable();
+
+   std::string l_customer_name = { "ABC" };
+   std::string l_placed_order = { "PQM"};
+   const CMutableSpecifier l_mutable_specifier(l_customer_name,100, l_placed_order,100);
+
+   std::cout<<"PLACED_ORDER:"<<l_mutable_specifier.GetModifyPlacedOrder("XYZ") <<std::endl;
+   std::cout<<"TOTAL_BILL:"  <<l_mutable_specifier.GetModifyTotalBill(200)     << std::endl;
     return 0;
 }

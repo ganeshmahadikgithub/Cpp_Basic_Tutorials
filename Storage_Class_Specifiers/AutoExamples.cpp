@@ -55,6 +55,14 @@ namespace SPECIFIER
 
             CABC* l_from_smart_pointer = l_abc_ptr.get();
 
+
+            //range based for loop
+
+            for (const auto& l_index:l_vec)
+            {
+                std::cout << l_index << std::endl;
+            }
+
         }
 
         void CAutoExamples::InitializerListAutoVariable() const
