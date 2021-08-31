@@ -23,4 +23,5 @@ int main()
 	std::cout << "l_number1 = " << l_number1 << std::endl;
 	std::cout << "l_number2 = " << l_number2 << std::endl;
 
+	return 0;
 }
