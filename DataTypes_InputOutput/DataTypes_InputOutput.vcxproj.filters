@@ -35,5 +35,8 @@
     <ClInclude Include="DataTypeModifiers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DataTypeCasting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

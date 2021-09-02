@@ -143,6 +143,7 @@
     <ClCompile Include="UserDefinedDataTypes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataTypeCasting.h" />
     <ClInclude Include="DataTypeModifiers.h" />
     <ClInclude Include="DerivedDataTypes.h" />
     <ClInclude Include="PrimitiveOrFundamental.h" />
