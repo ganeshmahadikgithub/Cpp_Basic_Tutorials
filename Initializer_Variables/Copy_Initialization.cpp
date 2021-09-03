@@ -1,4 +1,5 @@
 #include "Copy_Initialization.h"
+
 namespace INITIALIZER
 {
     namespace COPY

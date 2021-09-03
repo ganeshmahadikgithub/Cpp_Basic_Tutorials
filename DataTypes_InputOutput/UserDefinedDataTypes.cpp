@@ -1,6 +1,6 @@
 #include "UserDefinedDataTypes.h"
 
-namespace USERDEFINED = DATA_TYPES::USER_DEFINED;
+namespace USERDEFINED = DATA_TYPES::USER_DEFINED; //namepace alias
 
 USERDEFINED::ClassName::ClassName(const int f_int_data, const char f_char_data, const float f_float_data)
     : m_int_data_member{f_int_data}

@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int m_memberVariable = 110;//declared global variable
+int m_memberVariable { 110 };//declared global variable
 
 int GetData()
 {
