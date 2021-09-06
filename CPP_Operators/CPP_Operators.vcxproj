@@ -142,6 +142,7 @@
     <ClCompile Include="CPP_Operators.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arithmetic.h" />
     <ClInclude Include="Assignment.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -23,5 +23,8 @@
     <ClInclude Include="Assignment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Arithmetic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

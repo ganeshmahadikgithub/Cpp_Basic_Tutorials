@@ -7,8 +7,9 @@ namespace OPERATOR
 	{
 		namespace SIMPLE
 		{
-
-			/*  =   */
+			/// <summary>
+			/// = Operator
+			/// </summary>
 			class CBaseClass
 			{
 			public:
@@ -57,7 +58,9 @@ namespace OPERATOR
 
 		namespace COMPOUND
 		{
-			//
+			/// <summary>
+			/// [ += , -= , /= , *= , %= , >>= , <<=  ,  |=  , &=  , ^=  ] Operators
+			/// </summary>
 			void PerformCompoundAssOperation()
 			{
 				int l_data = 20, l_data1 = 10;

@@ -2,12 +2,27 @@
 //
 
 #include <iostream>
-#include"Assignment.h"
+#include "Assignment.h"
+#include "Arithmetic.h"
+
 using namespace OPERATOR::ASSIGNMENT;
+using namespace OPERATOR::ARITHMETIC;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Operators!\n";
+    /// <summary>
+    /// Assignment Operator
+    /// </summary>
+    /// <returns></returns>
+
     AssignmentOperatorFun();/* = */ 
     COMPOUND::PerformCompoundAssOperation(); // *=,+=,>>=,<<=,-=,/=,&=,!=,^=, |=
+
+
+    /// <summary>
+    /// Arithmetic Operator
+    /// </summary>
+    /// <returns></returns>
+    PerformArithmeticOperations();  //  +, - , * , / , %
 }
