@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataTypes_InputOutput", "Da
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Namespace_Alias_Typedef", "Namespace_Alias_Typedef\Namespace_Alias_Typedef.vcxproj", "{3DF4F147-4BED-4ACB-A7F3-23E44F7CD84A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPP_Operators", "CPP_Operators\CPP_Operators.vcxproj", "{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{3DF4F147-4BED-4ACB-A7F3-23E44F7CD84A}.Release|x64.Build.0 = Release|x64
 		{3DF4F147-4BED-4ACB-A7F3-23E44F7CD84A}.Release|x86.ActiveCfg = Release|Win32
 		{3DF4F147-4BED-4ACB-A7F3-23E44F7CD84A}.Release|x86.Build.0 = Release|Win32
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Debug|x64.ActiveCfg = Debug|x64
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Debug|x64.Build.0 = Debug|x64
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Debug|x86.ActiveCfg = Debug|Win32
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Debug|x86.Build.0 = Debug|Win32
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Release|x64.ActiveCfg = Release|x64
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Release|x64.Build.0 = Release|x64
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Release|x86.ActiveCfg = Release|Win32
+		{6EC5BE01-6481-4AAD-8514-F08EAFC7424F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
