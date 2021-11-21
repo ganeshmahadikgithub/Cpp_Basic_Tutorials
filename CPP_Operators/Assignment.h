@@ -10,6 +10,7 @@ namespace OPERATOR
 			/// <summary>
 			/// = Operator
 			/// </summary>
+			/// 
 			class CBaseClass
 			{
 			public:
