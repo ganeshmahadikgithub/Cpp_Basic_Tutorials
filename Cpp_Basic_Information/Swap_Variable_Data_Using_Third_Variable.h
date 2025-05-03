@@ -1,27 +1,62 @@
 #pragma once
 #include <iostream>
 
-using namespace std;
+// Encapsulate logic in a reusable function
+void swapWithoutUsingThirdVariable(int& nFirst, int& nSecond) {
+	// GOOD: without using third variable
+	nFirst += nSecond;
+	nSecond = nFirst - nSecond;
+	nFirst = nFirst - nSecond;
+}
 
 int main()
 {
-	// Initialize variables l_number1, l_number2
-	int l_number1{ 10 };
-	int l_number2{ 20 };
+	// BAD: Poorly named variables
+	int a = 10;
+	int b = 20;
+	int t; // BAD: Uninitialized variable
 
-	// Print the values of l_number1 and l_number2
-	std::cout << "Initial values of l_number1 and l_number2 are:" << std::endl;
-	std::cout << "l_number1 = " << l_number1 << std::endl;
-	std::cout << "l_number2 = " << l_number2 << std::endl;
+	// BAD: Mixing logic and output
+	std::cout << "Before swapping:" << std::endl;
+	std::cout << "a = " << a << ", b = " << b << std::endl;
 
-	//without using third variable
-	l_number1 += l_number2;
-	l_number2  = l_number1 - l_number2;
-	l_number1  = l_number1 - l_number2;
+	// BAD: Using an uninitialized variable
+	t = a;
+	a = b;
+	b = t;
 
 	std::cout << "After swapping:" << std::endl;
-	std::cout << "l_number1 = " << l_number1 << std::endl;
-	std::cout << "l_number2 = " << l_number2 << std::endl;
+	std::cout << "a = " << a << ", b = " << b << std::endl;
+
+	/* ------------------------------------------------------------ */
+	// GOOD: Use meaningful variable names
+	int l_number1 { 10 };
+	int l_number2 { 20 };
+
+	// GOOD: Add comments for clarity
+	std::cout << "Before swapping:" << std::endl;
+	std::cout << "l_number1 = " << l_number1 << ", l_number2 = " << l_number2 << std::endl;
+
+	// Call the reusable function
+	swapUsingThirdVariable(l_number1, l_number2);
+
+	std::cout << "After swapping:" << std::endl;
+	std::cout << "l_number1 = " << l_number1 << ", l_number2 = " << l_number2 << std::endl;
 
 	return 0;
 }
+
+/*
+Summary
+Good Practices :
+•	Properly initialize variables.
+•	Use meaningful variable names.
+•	Encapsulate logic in reusable functions.
+•	Avoid namespace pollution.
+•	Add comments for clarity.
+Bad Practices:
+•	Avoid uninitialized variables.
+•	Do not use poorly named variables.
+•	Avoid mixing logic and output.
+•	Do not use global variables.
+*/
