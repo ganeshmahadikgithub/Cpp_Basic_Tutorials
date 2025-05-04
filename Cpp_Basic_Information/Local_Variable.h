@@ -2,13 +2,25 @@
 #include <iostream>
 
 // BAD PRACTICE: Using `using namespace std;` in a header file
+// This pollutes the global namespace and can lead to name conflicts in larger projects.
 using namespace std;
 
 /*
-Good Practices
-1. Use of Local Variables:
+========================
+GOOD PRACTICES
+========================
+1. **Use of Local Variables**:
    - Demonstrates proper use of local variables within their respective scopes.
    - Ensures variables are not unnecessarily exposed outside their intended scope.
+
+2. **Encapsulation of Logic in Functions**:
+   - Promotes modularity and reusability by encapsulating logic in functions.
+
+3. **Use of Constants**:
+   - Use `constexpr` or `const` for predefined values to improve maintainability.
+
+4. **Avoid Hardcoding**:
+   - Avoid hardcoded values by using constants or configurable parameters.
 */
 
 // GOOD PRACTICE: Encapsulation of logic in a function
@@ -22,17 +34,21 @@ int CalculateSquare(int number)
 // GOOD PRACTICE: Encapsulation of logic in a function
 int GetData()
 {
-    const int predefinedValue = 20; // GOOD: Use of a constant for predefined value
+    constexpr int predefinedValue = 20; // GOOD: Use of a constant for predefined value
     return predefinedValue;
 }
 
 /*
-Bad Practices
-1. Poor Variable Naming:
+========================
+BAD PRACTICES
+========================
+1. **Poor Variable Naming**:
    - Variable names that are not descriptive or meaningful.
-2. Hardcoded Values:
+
+2. **Hardcoded Values**:
    - Using hardcoded values instead of constants or configurable parameters.
-3. Including `main()` in a header file:
+
+3. **Including `main()` in a Header File**:
    - Header files should only contain declarations, not definitions or executable code.
 */
 
@@ -62,34 +78,45 @@ int main()
     return 0;
 }
 
-
 /*
-Good Coding Practices
+========================
+SUMMARY
+========================
+**GOOD PRACTICES**:
+1. **Use of Local Variables**:
+   - Properly scoped variables reduce unintended side effects.
+   - Example: `int square = number * number;`
 
-1.	Use of Local Variables :
-    •	The code demonstrates the proper use of local variables(l_member) within their respective scopes(GetData() and main()).
-    •	This ensures that variables are not unnecessarily exposed outside their intended scope, reducing the risk of unintended side effects.
-2.	Encapsulation of Logic in Functions :
-    •	The GetData() function encapsulates the logic for returning a specific value.This promotes modularity and reusability.
-3.	Use of #pragma once :
-    •	The inclusion of #pragma once prevents multiple inclusions of the header file, which is a good practice for avoiding redefinition errors.
-4.	Consistent Use of std::cout :
-    •	The code uses std::cout for output, which is standard and portable.
+2. **Encapsulation of Logic in Functions**:
+   - Promotes modularity and reusability.
+   - Example: `int CalculateSquare(int number);`
 
-Bad Coding Practices
-1.	Use of using namespace std; :
-    •	Including using namespace std; in a header file is considered bad practice because it pollutes the global namespace.This can lead to name conflicts in larger projects.
-    •	Better Practice : Use std::explicitly(e.g., std::cout) or limit using namespace to source files(.cpp).
-2.	Variable Naming :
-    •	The variable name l_member is not descriptive.It does not convey the purpose or meaning of the variable.
-    •	Better Practice : Use meaningful names like localValue or dataValue to improve code readability.
-3.	Header File Contains main() :
-    •	Including the main() function in a header file is a bad practice.Header files are meant for declarations, not definitions or executable code.
-    •	Better Practice : Move the main() function to a.cpp file and keep the header file for function declarations.
-4.	Hardcoded Values :
-    •	The value 20 in GetData() and 40 in main() are hardcoded, which reduces flexibility.
-    •	Better Practice : Use constants or configurable parameters to make the code more maintainable.
-5.	Lack of Comments :
-    •	While there is a single comment(//local member), it does not provide meaningful insight into the purpose of the code.
-    •	Better Practice : Add comments to explain the purpose of functions, variables, and logic.
+3. **Use of Constants**:
+   - Use `constexpr` or `const` for predefined values.
+   - Example: `constexpr int predefinedValue = 20;`
+
+4. **Avoid Hardcoding**:
+   - Use constants or configurable parameters instead of hardcoded values.
+   - Example: `constexpr int predefinedValue = 20;`
+
+**BAD PRACTICES**:
+1. **Using `using namespace std;` in a Header File**:
+   - Pollutes the global namespace and can lead to name conflicts.
+   - Better Practice: Use `std::` explicitly (e.g., `std::cout`).
+
+2. **Poor Variable Naming**:
+   - Non-descriptive names like `x` reduce code readability.
+   - Better Practice: Use meaningful names like `result` or `input`.
+
+3. **Including `main()` in a Header File**:
+   - Header files should only contain declarations, not definitions or executable code.
+   - Better Practice: Move the `main()` function to a `.cpp` file.
+
+4. **Hardcoded Values**:
+   - Reduces flexibility and maintainability.
+   - Better Practice: Use constants or configurable parameters.
+
+5. **Lack of Comments**:
+   - Comments should explain the purpose of functions, variables, and logic.
+   - Better Practice: Add meaningful comments to improve code readability.
 */

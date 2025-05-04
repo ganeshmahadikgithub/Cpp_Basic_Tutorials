@@ -93,16 +93,23 @@ int main()
 }
 
 /*
-Summary:
-BAD PRACTICES:
-1. Declaring global const variables directly in the global scope.
-2. Using const for values that could be evaluated at compile time.
-3. Misunderstanding const pointers.
+========================
+SUMMARY OF GOOD PRACTICES
+========================
+1. Encapsulate constants in namespaces or classes to avoid polluting the global namespace.
+2. Use `constexpr` for compile-time constants to ensure they are evaluated at compile time.
+3. Use `const` for runtime constants to prevent accidental modification.
+4. Use const pointers correctly:
+   - `const int*`: Pointer to a constant value (value cannot be modified, pointer can change).
+   - `int* const`: Constant pointer to a value (pointer cannot change, value can be modified).
+   - `const int* const`: Constant pointer to a constant value (neither pointer nor value can change).
+5. Use `const` for member functions that do not modify the object to ensure immutability.
 
-GOOD PRACTICES:
-1. Encapsulate constants in namespaces or classes.
-2. Use constexpr for compile-time constants.
-3. Use const for runtime constants.
-4. Use const pointers correctly.
-5. Use const for member functions that do not modify the object.
+========================
+SUMMARY OF BAD PRACTICES
+========================
+1. Declaring global const variables directly in the global scope, which can lead to namespace pollution.
+2. Using `const` for values that could be evaluated at compile time instead of `constexpr`.
+3. Misunderstanding const pointers, leading to incorrect usage or errors.
+4. Skipping encapsulation for constants, making the code harder to maintain and prone to conflicts.
 */
