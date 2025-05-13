@@ -12,9 +12,9 @@ namespace VARIABLE_COMMENTS
     void CVariableGood::ShowData() const
     {
         // GOOD: Accessing properly initialized variables
-        std::cout << "Good Member1: " << m_number1 << std::endl;
-        std::cout << "Good Member2: " << m_number2 << std::endl;
-        std::cout << "Good Member3: " << m_number3 << std::endl;
+        std::cout << "Good Member1 : " << m_number1 << std::endl;
+        std::cout << "Good Member2 : " << m_number2 << std::endl;
+        std::cout << "Good Member3 : " << m_number3 << std::endl;
     }
 
     void CVariableGood::SetData(int number1, int number2, int number3)
