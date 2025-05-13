@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 
+
 // BAD PRACTICE: Using `using namespace std;` in a header file
 // This pollutes the global namespace and can lead to name conflicts in larger projects.
 using namespace std;
